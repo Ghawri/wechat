@@ -4,7 +4,7 @@ let name;
 let textarea= document.querySelector("#textarea")
 let messageArea = document.querySelector(".message__area")
 let sendbtn = document.querySelector("#sendbtn")
-name verification
+//name verification
 do{
 
     name =prompt('Enter your name... ')
