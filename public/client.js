@@ -3,15 +3,28 @@ let name;
 
 let textarea= document.querySelector("#textarea")
 let messageArea = document.querySelector(".message__area")
-do{
+let sendbtn = document.querySelector("#sendbtn")
+//name verification
+// do{
 
-    name =prompt('Enter your name... ')
-}while(!name)
+//     name =prompt('Enter your name... ')
+// }while(!name)
 
+
+    var textareaval;
     textarea.addEventListener('keyup',(e)=>{
         if(e.key == "Enter"){
-            sendMessage(e.target.value)
+        
+        textareaval=  document.getElementById("textarea").value;
+        sendMessage(textareaval)
         }
+    })
+    sendbtn.addEventListener('click',(e)=>{
+        
+        textareaval=  document.getElementById("textarea").value;
+    
+        sendMessage(textareaval)
+
     })
 
     function sendMessage(message){
@@ -37,7 +50,7 @@ do{
 
         let markup =`
         <h4> ${msg.user}</h4>
-        <p> ${msg.message}</p>`
+        <p > ${msg.message}</p>`
 
         maindiv.innerHTML = markup
         messageArea.appendChild(maindiv)
