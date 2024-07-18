@@ -58,11 +58,17 @@ textarea {
 .incoming {
     background: #8F8BE8;
     color: #fff;  
+    float: left;
+    display: inline-table;
+    flex-direction: row;
 }
 .outgoing {
     background: #e9eafd;
     color: #787986;
     margin-left: auto;
+    float: right;
+    display: inline-table;
+    flex-direction: row;
 }
 .message h4 {
     position: absolute;
@@ -70,4 +76,16 @@ textarea {
     left: 0;
     color: #333;
     font-size: 14px;
+}
+
+.textsend{
+    display: flex;
+
+}
+#sendbtn{
+
+    border: none;
+    background: #8F8BE8;
+    border-radius: 1rem;
+    width: 5rem;
 }
