@@ -4,11 +4,11 @@ let name;
 let textarea= document.querySelector("#textarea")
 let messageArea = document.querySelector(".message__area")
 let sendbtn = document.querySelector("#sendbtn")
-//name verification
-// do{
+name verification
+do{
 
-//     name =prompt('Enter your name... ')
-// }while(!name)
+    name =prompt('Enter your name... ')
+}while(!name)
 
 
     var textareaval;
